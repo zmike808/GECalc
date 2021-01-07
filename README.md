@@ -1,6 +1,6 @@
-GE Calc
-=============
-Use maths to set price and quantity in GE!
+#GE Calc ![Plugin Installs](https://img.shields.io/endpoint?url=https://i.pluginhub.info/shields/installs/plugin/gecalc) ![Plugin Rank](https://img.shields.io/endpoint?url=https://i.pluginhub.info/shields/rank/plugin/gecalc)
+
+A [Runelite](https://github.com/runelite/runelite) plugin that add the ability to use math/s to set price and quantity in the Grans Exchange window, and more...
 
 Usage
 ------
@@ -31,6 +31,12 @@ This plugin also allows entering of decimal values followed by a unit:
 
 | NOTE: The Grand Exchange quantity and price input windows contain an asterisk '*' at the end of the text field. This is only visual and does not impact the result.
 | --- |
+
+Bugs & Requests
+-------
+If you do run into any bugs please [create an issue](https://github.com/cman8396/GECalc/issues/new). I am primarily a C# developer so be patient.
+
+If you have any requests please [create an issue](https://github.com/cman8396/GECalc/issues/new) and start the title with [Request].
 
 License
 -------
