@@ -4,7 +4,7 @@ Use maths to set price and quantity in GE!
 
 Usage
 ------
-You can use expressions to set the price and/or quantity using the Grand Exchange.
+The plugin enabled the use of expressions to set the price and/or quantity using the Grand Exchange.
 
 | Input  | Result |
 | ------------- | ------------- |
@@ -13,7 +13,7 @@ You can use expressions to set the price and/or quantity using the Grand Exchang
 | 100 + 100  | 200  |
 | 100 - 50  | 50  |
 
-This plugin also allows entering of decimal values followed by a unity:
+This plugin also allows entering of decimal values followed by a unit:
 
 | Input  | Result |
 | ------------- | ------------- |

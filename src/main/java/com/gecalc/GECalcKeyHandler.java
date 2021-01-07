@@ -47,9 +47,23 @@ class GECalcKeyHandler implements KeyListener
     {
         ScriptEngineManager mgr = new ScriptEngineManager();
         ScriptEngine engine = mgr.getEngineByName("JavaScript");
-        String result = String.valueOf(engine.eval(expression));
+        String result = String.valueOf(engine.eval(expression).toString());
 
-        return Integer.parseInt(result);
+        // Try the conversion to an integer, catch any errors and default to 1gp
+        try {
+            // Check if result contains a decimal, if so get the integer value
+            // Integer.parseInt() didn't seem to do the job
+            if (result.contains("."))
+                return Integer.parseInt(result.split("\\.")[0]);
+            else
+                return Integer.parseInt(result);
+        } catch (ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+            return 1;
+        } catch (NumberFormatException e){
+            e.printStackTrace();
+            return 1;
+        }
     }
 
     private int convertKMBValue(String sanitisedInput)
@@ -80,7 +94,8 @@ class GECalcKeyHandler implements KeyListener
             return (int) newAmount;
         }
 
-         return Integer.parseInt(sanitisedInput);
+        // If the format of the entered value doesn't contain a unit, remove all dots
+         return Integer.parseInt(sanitisedInput.replaceAll("\\.",""));
     }
 
     private void parseQuantity()
@@ -94,7 +109,7 @@ class GECalcKeyHandler implements KeyListener
         if (containsOperators(sanitisedInput)) {
             try {
                 // Run the entered expression and attempt to get the value
-                calculatedValue = (int) runExpression(sanitisedInput);
+                calculatedValue = runExpression(sanitisedInput);
             } catch (ScriptException e) {
                 e.printStackTrace();
             }
