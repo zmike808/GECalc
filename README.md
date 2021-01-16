@@ -26,9 +26,6 @@ This plugin also allows entering of decimal values followed by a unit:
 
 ![Value Entry](assets/entry.png "Value Entry")
 
-| NOTE: Expressions cannot include unit values, for example: '1.5k * 2' or '8k + 4.6k' will not work!
-| --- |
-
 | NOTE: The Grand Exchange quantity and price input windows contain an asterisk '*' at the end of the text field. This is only visual and does not impact the result.
 | --- |
 
@@ -44,4 +41,4 @@ GE Calc is licensed under the BSD 2-Clause License. See LICENSE for info.
 
 Author
 ------
-cman8396, Large Chongus
+cman8396, LargeChongus
