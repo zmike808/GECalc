@@ -1,6 +1,6 @@
 GE Calc ![Plugin Installs](https://img.shields.io/endpoint?url=https://i.pluginhub.info/shields/installs/plugin/gecalc) ![Plugin Rank](https://img.shields.io/endpoint?url=https://i.pluginhub.info/shields/rank/plugin/gecalc)
 ------
-A [Runelite](https://github.com/runelite/runelite) plugin that add the ability to use math/s to set price and quantity in the Grans Exchange window, and more...
+A [Runelite](https://github.com/runelite/runelite) plugin that add the ability to use math/s to set price and quantity in the Grans Exchange window, and enabled the entry of decimal values when using the k, m, and b unit identifiers. See usage below.
 
 Usage
 ------
@@ -34,6 +34,10 @@ Bugs & Requests
 If you do run into any bugs please [create an issue](https://github.com/cman8396/GECalc/issues/new). I am primarily a C# developer so be patient.
 
 If you have any requests please [create an issue](https://github.com/cman8396/GECalc/issues/new) and start the title with [Request].
+
+Future Plans
+-------
+We are currently working somehting with the percentage increase button in the GE to allow greater percentage adjustments when holding the Shift key. 
 
 License
 -------
