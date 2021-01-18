@@ -35,10 +35,6 @@ If you do run into any bugs please [create an issue](https://github.com/cman8396
 
 If you have any requests please [create an issue](https://github.com/cman8396/GECalc/issues/new) and start the title with [Request].
 
-Future Plans
--------
-We are currently working somehting with the percentage increase button in the GE to allow greater percentage adjustments when holding the Shift key. 
-
 License
 -------
 GE Calc is licensed under the BSD 2-Clause License. See LICENSE for info.
