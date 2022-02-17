@@ -176,10 +176,10 @@ class GECalcKeyHandler implements KeyListener {
         } else if ((e.getKeyCode() == KeyEvent.VK_PERIOD || e.getKeyCode() == KeyEvent.VK_DECIMAL) && isQuantityInput()) {
             // Override input for decimal point
             appendStringToValue(".", true);
-        } else if ((e.getKeyCode() == 32) && isQuantityInput()) {
+        } else if ((e.getKeyCode() == KeyEvent.VK_SPACE) && isQuantityInput()) {
             // Override input for space - for nice formatting
             appendStringToValue(" ", false);
-        } else if ((e.getKeyCode() == 107 || e.getKeyCode() == 109 || e.getKeyCode() == 106 || e.getKeyCode() == 111) && isQuantityInput()) {
+        } else if ((e.getKeyCode() == KeyEvent.VK_PLUS || e.getKeyCode() == KeyEvent.VK_MINUS || e.getKeyCode() == KeyEvent.VK_ASTERISK || e.getKeyCode() == KeyEvent.VK_DIVIDE) && isQuantityInput()) {
             // Override input for operators + - * /
             appendStringToValue(String.valueOf(e.getKeyChar()), false);
         }
